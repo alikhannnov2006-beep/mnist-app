@@ -7,7 +7,7 @@ st.title("MNIST Digit Classifier")
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("mnist_model.keras")
+    return tf.keras.models.load_model("mnist_model.keras", compile=False)
 
 st.write("Upload a 28x28 grayscale digit image.")
 
